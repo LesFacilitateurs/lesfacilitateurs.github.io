@@ -1,4 +1,4 @@
-# al-faraby.github.io
-Web site for Al-Faraby project.
+# lesfacilitateurs.github.io
+Web site for LesFacilitateurs project.
 
-Available here: [https://al-faraby.github.io/](https://al-faraby.github.io/)
+Available here: [https://lesfacilitateurs.github.io](https://lesfacilitateurs.github.io)
