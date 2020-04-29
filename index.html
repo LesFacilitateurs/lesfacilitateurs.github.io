@@ -8,6 +8,21 @@ body, html {
     margin: 0;
 }
 
+table { 
+  display: table;
+  border-collapse: separate;
+  border-spacing: 10px;
+  border-color: gray;
+}
+
+th, td {
+  padding: 2px;
+  text-align: center;
+}
+
+tr:nth-child(even) {background-color: #e4a965bb;}
+tr:nth-child(odd) {background-color: #ffffff83;}
+
 .bgimg {
     background-image: url('https://www.w3schools.com//w3images/forestbridge.jpg');
     height: 100%;
@@ -59,21 +74,25 @@ hr {
 			  <tr>
 			    <th>Topic</th>
 			    <th>Date</th>
-			    <th>Links</th>
-			    <th>Agenda</th>
+			    <th>Live</th>
+			    <th>Recording</th>
+			    <th colspan="2">Agenda</th>
 			  </tr>
 			  <tr>
 			    <td>IPv6: basics on Linux</td>
 			    <td><span id="ipv6-date"></span></td>
-			    <td><a href="https://www.youtube.com/channel/UC3MZ5EovcIlxn5TTpwa977Q">Visit our Youtube channel</a></td>
+			    <td><a target="_blank" href="https://meet.jit.si">Live session</a></td>
+			    <td><a target="_blank" href="https://www.youtube.com/channel/UC3MZ5EovcIlxn5TTpwa977Q"> IPv6 tutorial on youtube</a><br></td>
 			    <td><a href="/invites/ipv6.ics">Outlook</a></td>
+			    <td><a target="_blank" href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20200505T170000Z%2F20200505T183000Z&text=IPv6%20tutorial%3A%20basics%20on%20Linux&location=Later&details=Later">Google</a></td>
 			  </tr>
 			</table>
 		</div>
 		<div class="bottomleft">
-			<a target="_blank" title="follow me on Twitter" href="https://twitter.com/IamSofianinho/"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
-			<a target="_blank" title="follow me on Twitter" href="https://twitter.com/abousselmi7"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
-			<a target="_blank" title="follow me on youtube" href="https://www.youtube.com/channel/UC3MZ5EovcIlxn5TTpwa977Q"><img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+			<a target="_blank" title="follow me on Github" href="https://github.com/LesFacilitateurs"><img alt="follow me on Github" src="/icons/github30x30.png" border=0></a>
+			<a target="_blank" title="follow me on Twitter" href="https://twitter.com/IamSofianinho/"><img alt="follow me on Twitter" src="/icons/twitter30x30.png" border=0></a>
+			<a target="_blank" title="follow me on Twitter" href="https://twitter.com/abousselmi7"><img alt="follow me on Twitter" src="/icons/twitter30x30.png" border=0></a>
+			<a target="_blank" title="follow me on youtube" href="https://www.youtube.com/channel/UC3MZ5EovcIlxn5TTpwa977Q"><img alt="follow me on youtube" src="/icons/youtube30x30.png" border=0></a>
 		</div>
 	</div>
 
@@ -97,7 +116,7 @@ var countdownfunction = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    document.getElementById("demo").innerHTML = days + "j " + hours + "h "
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
@@ -108,7 +127,7 @@ var countdownfunction = setInterval(function() {
 }, 1000);
 // the table part
 var dt = new Date("May 6 2020 18:00:00");
-document.getElementById("ipv6-date").innerHTML = dt.toLocaleString();
+document.getElementById("ipv6-date").innerHTML = dt.toLocaleString('fr-FR');
 </script>
 </body>
 </html>
