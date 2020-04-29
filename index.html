@@ -67,7 +67,7 @@ hr {
 			    <td>IPv6: basics on Linux</td>
 			    <td><span id="ipv6-date"></span></td>
 			    <td><a href="https://www.youtube.com/channel/UC3MZ5EovcIlxn5TTpwa977Q">Visit our Youtube channel</a></td>
-			    <td><a href="invites/ipv6.ics">Outlook</a></td>
+			    <td><a href="{{ site.baseurl }}/invites/ipv6.ics">Outlook</a></td>
 			  </tr>
 			</table>
 		</div>
@@ -105,8 +105,7 @@ var countdownfunction = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-</script>
-<script>
+# the table part
 var dt = new Date("May 6 2020 18:00:00");
 document.getElementById("ipv6-date").innerHTML = dt.toLocaleString();
 </script>
