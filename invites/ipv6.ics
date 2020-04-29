@@ -26,9 +26,9 @@ DTSTAMP:20200429T045944Z
 UID:20200429T045944Z-1891778592@marudot.com
 DTSTART;TZID=Europe/Berlin:20200505T180000
 DTEND;TZID=Europe/Berlin:20200505T193000
-SUMMARY:IPv6 tutorial: basics on Linux
-URL:Later
-DESCRIPTION:Later
-LOCATION:Later
+SUMMARY:Tutoriel IPv6 sur Linux
+URL:https://meet.jit.si/IPv6-tutorial-on-linux
+DESCRIPTION:Tutoriel IPv6 sur Linux. Suivez nous sur Jitsi meet (aucune installation nécessaire): https://meet.jit.si/IPv6-tutorial-on-linux. Retrouvez l'enregistrement de la session sur notre chaine Youtube: https://www.youtube.com/channel/UC3MZ5EovcIlxn5TTpwa977Q
+LOCATION:https://meet.jit.si/IPv6-tutorial-on-linux
 END:VEVENT
 END:VCALENDAR
