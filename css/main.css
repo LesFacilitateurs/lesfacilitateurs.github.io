@@ -1,303 +1,197 @@
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-
-@font-face {
-  font-family: Lato-Regular;
-  src: url('../fonts/Lato/Lato-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Lato-Bold;
-  src: url('../fonts/Lato/Lato-Bold.ttf'); 
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
-* {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
-}
+/*added from previous page*/
 
 body, html {
-	height: 100%;
-	font-family: sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
-/* ------------------------------------ */
+.bgimg {
+    background-image: url('/icons/forestbridge.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    /* font-size: medium; */
+}
+
+h1 { font-size: 5.9vw; } 
+h2 { font-size: 3.0vh; } 
+p { font-size: 2.5vh; }
+
+.topleft {
+    position: absolute;
+    top: 0%;
+    left: 1%;
+}
+
 a {
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+    text-decoration: none;
+    color:rgba(101, 221, 121, 0.945);
 }
 
-a:focus {
-	outline: none !important;
+  
+.bottomleft {
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
 }
 
-a:hover {
-	text-decoration: none;
+.middle {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   /* padding-top: 100px;*/
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-/* ------------------------------------ */
-h1,h2,h3,h4,h5,h6 {margin: 0px;}
-
-p {margin: 0px;}
-
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+hr {
+    margin: auto;
+    width: 40%;
 }
+/*END of added from previous page*/
 
-
-/* ------------------------------------ */
-input {
-  display: block;
-	outline: none;
-	border: none !important;
-}
-
-textarea {
-  display: block;
-  outline: none;
-}
-
-textarea:focus, input:focus {
-  border-color: transparent !important;
-}
-
-/* ------------------------------------ */
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ Scroll bar ]*/
-.js-pscroll {
-  position: relative;
-  overflow: hidden;
-}
-
-.table100 .ps__rail-y {
-  width: 9px;
-  background-color: transparent;
-  opacity: 1 !important;
-  right: 5px;
-}
-
-.table100 .ps__rail-y::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #ebebeb;
-  border-radius: 5px;
-  width: 100%;
-  height: calc(100% - 30px);
-  left: 0;
-  top: 15px;
-}
-
-.table100 .ps__rail-y .ps__thumb-y {
-  width: 100%;
-  right: 0;
-  background-color: transparent;
-  opacity: 1 !important;
-}
-
-.table100 .ps__rail-y .ps__thumb-y::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #cccccc;
-  border-radius: 5px;
-  width: 100%;
-  height: calc(100% - 30px);
-  left: 0;
-  top: 15px;
-}
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Table ]*/
-
-.limiter {
-  width: 1366px;
-  margin: 0 auto;
-}
-
-.container-table100 {
-  width: 100%;
-  /*min-height: 100vh;*/
-  /*background: #fff;*/
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  /*padding: 33px 30px;*/
-}
-
-.wrap-table100 {
-  width: 1170px;
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ Table ]*/
-.table100 {
-  background-color: #fff;
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
 }
 
 table {
-  width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    overflow-y: auto;    
+    overflow-x: hidden; 
+    width: 100%;
 }
 
-th, td {
-  font-weight: unset;
-  padding-right: 10px;
+thead {
+    background-color: #393939bd;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
-
-.column1hd {
-  width: 33%;
-  padding-left: 140px;
-}
-.column1 {
-  width: 33%;
-  padding-left: 10px;
-}
-
-.column2 {
-  width: 13%;
-}
-
-.column2hd {
-  width: 13%;
-  padding-left: 10px;
-}
-
-.column3hd {
-  width: 22%;
-  padding-left: 50px;
-}
-.column3 {
-  width: 22%;
-}
-
-.column4 {
-  width: 18%;
-}
-
-.column5 {
-  width: 14%;
-}
-.column5hd {
-  width: 14%;
-  padding-left: 10px;
-}
-.column6 {
-  width: 7%;
+/* to make header sticky with chrome*/
+thead tr:nth-child(1) th{
+    background-color: #393939bd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 
-
-.table100-head th {
-  padding-top: 18px;
-  padding-bottom: 18px;
+td{
+    background-color: #39393980;
 }
 
-.table100-body td {
-  padding-top: 16px;
-  padding-bottom: 16px;
+table tr {
+    border: 1px solid #ddd;
+    padding: .35em;
 }
 
-/*==================================================================
-[ Fix header ]*/
-.table100 {
-  position: relative;
-  padding-top: 60px;
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
 }
 
-.table100-head {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.table100-body {
-  max-height: 300px;
-  overflow: auto;
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 
+/*the container for the table*/
 
-/*==================================================================
-[ Ver3 ]*/
-.table100.ver3 {
-  background-color: #39393963;
+.overflow-container {
+    flex: 1;
+    overflow-y: auto;
+    height: 400px;
+    min-height: 0px;
+    width: 95%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+/* a custom scroller for mozilla and chrome*/
+.scroller {
+    overflow-y: auto;
+    scrollbar-color: #393939 #ddd;
+    scrollbar-width: thin;
 }
 
-.table100.ver3 .table100-body{
-  padding-right: 30px;
+.scroller::-webkit-scrollbar {
+    width: 5px;
+}
+.scroller::-webkit-scrollbar-track {
+    background: #ddd;
 }
 
-.table100.ver3 th {
-  font-family: Lato-Bold;
-  font-size: 16px;
-  color: #00ad5f;
-  line-height: 1.4;
-  text-transform: uppercase;
-  background-color: #39393963;
+.scroller::-webkit-scrollbar-thumb {
+    background: #393939; 
 }
+  
 
-.table100.ver3 td {
-  font-family: Lato-Regular;
-  font-size: 16px;
-  color: #b6b1b1;
-  line-height: 1.4;
-  background-color: #39393963;
+/* responsive parameters for the table to sow as cells*/
+
+@media screen and (max-width: 950px) {
+    
+    thead {
+        border: 0;
+        display: block;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        /* overflow: hidden; */
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+  /* td{
+    display: table-cell;
+  } */
+    td{
+        display: block;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        font-size: .8em;
+        text-align: right;
+    }
+  
+    table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+  
+    table td:last-child {
+        border-bottom: 0;
+    }
 }
-
-
-/*---------------------------------------------*/
-
-.table100.ver3 {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.15);
-  -ms-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.15);
-}
-
-.table100.ver3 .ps__rail-y {
-  right: 0px;
-}
-
-.table100.ver3 .ps__rail-y::before {
-  background-color: #4e4e4e;
-}
-
-.table100.ver3 .ps__rail-y .ps__thumb-y::before {
-  background-color: #00ad5f;
-}
-
+/* @media screen and (max-width: 750px) {
+    
+    td{
+        display: block;
+    }
+} */
