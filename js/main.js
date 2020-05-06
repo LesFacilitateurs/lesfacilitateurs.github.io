@@ -33,7 +33,7 @@ var countdownfunction = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("countdown").innerHTML = "prochainement, avis bienvenus :-)";
+        document.getElementById("countdown").innerHTML = "prochainement, avis bienvenus &#128512;";
     }
 }, 1000);
 
