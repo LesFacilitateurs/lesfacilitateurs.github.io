@@ -43,7 +43,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-   /* padding-top: 100px;*/
+    padding-top: 35px;
     transform: translate(-50%, -50%);
     text-align: center;
 }
