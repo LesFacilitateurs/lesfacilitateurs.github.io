@@ -1,29 +1,29 @@
 /*added from previous page*/
 
-body, html {
-    height: 100%;
+
+html {
+    background-image: url('/icons/forestbridge.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
 }
 
+body {
+    margin: 0;
+    font-size: medium;
+}
+
 .bgimg {
-    background-image: url('/icons/forestbridge.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
     position: relative;
     color: white;
     font-family: "Courier New", Courier, monospace;
-    /* font-size: medium; */
 }
 
-h1 { font-size: 5.9vw; } 
-h2 { font-size: 3.0vh; } 
-p { font-size: 2.2vh; }
+h1 { font-size: large; } 
 
 .topleft {
-    position: absolute;
-    top: 0%;
-    left: 1%;
+    padding: 10px;
 }
 
 a {
@@ -33,16 +33,12 @@ a {
 
   
 .social {
-    padding-top: 35px;
+    padding: 35px;
 }
 
 .middle {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     padding-top: 35px;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -97,7 +93,6 @@ table td {
 }
 
 table th {
-    font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
 }
@@ -168,7 +163,6 @@ table th {
 
     table td {
         border-bottom: 1px solid #ddd;
-        font-size: .8em;
         text-align: right;
     }
   
@@ -193,3 +187,9 @@ table th {
         display: block;
     }
 } */
+
+.mc-layout__bannerContent iframe { height: auto !important }
+
+/* Begin particules.js */
+#particles-js{ position:absolute; width: 100%; height: 100%; }
+/* End particules.js */
