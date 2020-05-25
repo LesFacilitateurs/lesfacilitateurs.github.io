@@ -15,7 +15,7 @@ body {
     line-height: 1.25;
 }
 
-h1 { font-size: large; }
+h1 { font-size: larger; }
 
 a {
     text-decoration: none;
@@ -23,7 +23,8 @@ a {
 }
 
 hr {
-    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
     width: 40%;
 }
 
@@ -41,6 +42,7 @@ hr {
     width: 100%;
     padding-top: 100px;
     text-align: center;
+    font-size: large;
 }
 
 .social {
@@ -50,11 +52,11 @@ hr {
 /* END of added from previous page*/
 
 table {
-    border: 1px solid #ccc;
     border-collapse: collapse;
     overflow-y: auto;    
     overflow-x: hidden; 
     width: 100%;
+    font-size: large;
 }
 
 thead {
@@ -76,10 +78,10 @@ thead tr:nth-child(1) th{
 
 td {
     background-color: #39393980;
+    border-top: 1px solid #ddd;
 }
 
 table tr {
-    border: 1px solid #ddd;
     padding: .35em;
 }
 
