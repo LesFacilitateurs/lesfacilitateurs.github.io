@@ -38,6 +38,15 @@ hr {
     padding: 10px;
 }
 
+.topleft img {
+    float: left;
+    margin-right: 10px;
+}
+
+.topleft h1, h5 {
+    display: inline;
+}
+
 .middle {
     width: 100%;
     padding-top: 100px;
