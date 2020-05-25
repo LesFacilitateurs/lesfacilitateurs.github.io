@@ -38,7 +38,7 @@ a {
 
 .middle {
     width: 100%;
-    padding-top: 35px;
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -90,6 +90,7 @@ table th,
 table td {
     padding: .625em;
     text-align: center;
+    padding: 5px;
 }
 
 table th {
